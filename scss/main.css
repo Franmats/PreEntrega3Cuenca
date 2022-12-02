@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+/* VARS */
+/* VARS */
+/* MIXINS */
+/* MIXINS */
 body {
   background-color: white;
 }
@@ -46,6 +50,10 @@ header nav .lista .lista__item .itemTexto:hover {
   border-radius: 5px;
 }
 
+.navBarMobile {
+  display: none;
+}
+
 footer {
   padding: 20px;
   background-color: black;
@@ -64,4 +72,196 @@ footer .redes:hover {
   color: black;
   background-color: white;
   border-radius: 5px;
+}
+
+/* MAIN FLEX */
+#main {
+  padding: 20px;
+  background-color: white;
+}
+#main .main-flex1 .imagen-flex1, #main .main-flex2 .imagen-flex2 {
+  width: 700px;
+  height: 500px;
+  padding: 15px;
+}
+#main .main-flex1 .imagen-flex1 img, #main .main-flex2 .imagen-flex2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 120px;
+}
+#main .main-flex1 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  padding: 5px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 30px;
+}
+#main .main-flex1 .grid1 {
+  width: 600px;
+  height: 400px;
+  display: grid;
+  background-color: brown;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-radius: 20px;
+}
+#main .main-flex1 .grid1 .celda1 {
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  font-size: 40px;
+}
+#main .main-flex1 .grid1 .celda2 {
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  font-size: 20px;
+}
+#main .main-flex1 .grid1 .celda3 {
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  font-size: 30px;
+}
+#main .main-flex2 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  padding: 5px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 30px;
+}
+#main .main-flex2 .imagen-flex2 {
+  order: 2;
+}
+#main .main-flex2 .grid2 {
+  width: 600px;
+  height: 400px;
+  display: grid;
+  background-color: brown;
+  grid-template-rows: 1fr 1fr 1fr;
+  border-radius: 20px;
+  order: 1;
+}
+#main .main-flex2 .grid2 .celda01 {
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  font-size: 40px;
+}
+#main .main-flex2 .grid2 .celda02 {
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  font-size: 20px;
+}
+#main .main-flex2 .grid2 .celda03 {
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  font-size: 30px;
+}
+
+.mobileItem {
+  display: none;
+}
+.mobileItem .div {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #main .main-flex1 .imagen-flex1 {
+    width: auto;
+    height: auto;
+    padding: 15px;
+  }
+  #main .main-flex1 .grid1 {
+    display: none;
+  }
+  #main .main-flex2 {
+    flex-direction: column-reverse;
+  }
+  #main .main-flex2 .imagen-flex2 {
+    width: auto;
+    height: auto;
+    padding: 15px;
+  }
+  #main .main-flex2 .grid2 {
+    display: none;
+  }
+  .mobileItem {
+    display: block;
+    color: white;
+    font-family: "Jost", sans-serif;
+    text-align: center;
+  }
+  .mobileItem div {
+    display: block;
+    color: white;
+    font-family: "Jost", sans-serif;
+    text-align: center;
+  }
+}
+/* MAIN PROMOCIONES */
+#mainPromos {
+  padding: 20px;
+}
+#mainPromos .flexPromos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+#mainPromos .flexPromos .promos {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+#mainPromos .flexPromos .promos img {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+#mainPromos .carta {
+  padding-top: 20px;
+  background-color: rgb(0, 0, 0);
+  width: auto;
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  color: white;
+  display: block;
+  transition: all 0.5s;
+}
+#mainPromos .carta:hover {
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+#mainPromos .mobileProm {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #mainPromos .mobileProm {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+  #mainPromos .flexPromos {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

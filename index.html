@@ -7,6 +7,10 @@
     <title> CRUNCH | Restaurant </title>
     <link rel="shortcut icon" href="./images/Sin título-1.png">
     <link rel="stylesheet" href="./scss/main.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -32,7 +36,36 @@
                     <a class="itemTexto" href="./pages/contacto.html" target="_self">Contacto</a>
                 </li>
             </ul>
-        </nav>    
+        </nav>
+        <div class="navBarMobile">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="lista">
+                        <li class="lista__item">
+                            <a class="itemTexto" href="index.html" target="_self">Inicio</a><!-- ver inicio -->
+                        </li>
+                        <li class="lista__item">
+                            <a class="itemTexto" href="./pages/promociones.html" target="_self">Promociones</a>
+                        </li>
+                        <li class="lista__item">
+                            <a class="itemTexto" href="./pages/testimonios.html" target="_self">Testimonios</a>
+                        </li>
+                        <li class="lista__item">
+                            <a class="itemTexto" href="./pages/galeria.html" target="_self">Galeria</a>
+                        </li>
+                        <li class="lista__item">
+                            <a class="itemTexto" href="./pages/contacto.html" target="_self">Contacto</a>
+                        </li>
+                    </ul> 
+                  </div>
+                </div>
+              </nav>
+        </div>    
+
     </header>
 
     <main id="main">
@@ -93,7 +126,7 @@
                 <b>ENTERATE DE MÁS EN LA SECCIÓN PROMOCIONES</b>
             </div>
             <div class="grid2">
-                <div class="celda01">ENSALADAS MIXTAS</div>
+                <div class="celda01">PORCION DE PAPAS FRITAS</div>
                 <div class="celda02">Abundantes, frescas y ricas son las características que definen nuestras ensaladas a sólo <b>$1500</b></div>
                 <div class="celda03"><b>ENTERATE DE MÁS EN LA SECCIÓN PROMOCIONES</b></div>
             </div>
