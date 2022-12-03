@@ -54,6 +54,30 @@ header nav .lista .lista__item .itemTexto:hover {
   display: none;
 }
 
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .navBarMobile {
+    display: block;
+  }
+  .lista__itemM {
+    display: block;
+    padding: 1px;
+  }
+  .lista__itemM .itemTextoM {
+    font-size: 30px;
+    color: aliceblue;
+    font-family: "Jost", sans-serif;
+    text-decoration: none;
+    transition: all 0.25s;
+  }
+  .lista__itemM .itemTextoM:hover {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+  }
+}
 footer {
   padding: 20px;
   background-color: black;
@@ -78,6 +102,17 @@ footer .redes:hover {
 #main {
   padding: 20px;
   background-color: white;
+}
+#main h1 {
+  padding: 5px;
+  margin-top: -15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  font-family: "Jost", sans-serif;
+  background-color: black;
+  border-radius: 10px;
+  text-align: center;
 }
 #main .main-flex1 .imagen-flex1, #main .main-flex2 .imagen-flex2 {
   width: 700px;
@@ -216,6 +251,17 @@ footer .redes:hover {
 #mainPromos {
   padding: 20px;
 }
+#mainPromos .promoH1 {
+  padding: 5px;
+  margin-top: -15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  font-family: "Jost", sans-serif;
+  background-color: black;
+  border-radius: 10px;
+  text-align: center;
+}
 #mainPromos .flexPromos {
   display: flex;
   flex-wrap: wrap;
@@ -264,4 +310,92 @@ footer .redes:hover {
   #mainPromos .flexPromos {
     display: none;
   }
+}
+/* MAIN TESTIMONIOS */
+#mainTestimonios {
+  padding: 20px;
+  height: auto;
+}
+#mainTestimonios .testH1 {
+  padding: 5px;
+  margin-top: -15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  font-family: "Jost", sans-serif;
+  background-color: black;
+  border-radius: 10px;
+  text-align: center;
+}
+#mainTestimonios .flexText {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+#mainTestimonios .flexText .colFlex {
+  background-color: aqua;
+  width: auto;
+  width: 300px;
+  height: 300px;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  align-self: center;
+}
+
+/* MAIN GALERIA */
+#mainGaleria {
+  padding: 20px;
+}
+#mainGaleria .galH1 {
+  padding: 5px;
+  margin-top: -15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  font-family: "Jost", sans-serif;
+  background-color: black;
+  border-radius: 10px;
+  text-align: center;
+}
+#mainGaleria .flexGale {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+/* MAIN CONTACTO */
+#mainContact {
+  padding: 20px;
+  height: auto;
+}
+#mainContact .mainH1 {
+  padding: 5px;
+  margin-top: -15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  font-family: "Jost", sans-serif;
+  background-color: black;
+  border-radius: 10px;
+  text-align: center;
+}
+#mainContact .flexContact {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#mainContact .flexContact .form1 {
+  border: 5px solid black;
+  font-family: "Jost", sans-serif;
+}
+#mainContact .flexContact .form1 tr .espacio {
+  padding: 20px;
+}
+#mainContact .flexContact .form2 {
+  border: 5px solid black;
+  font-family: "Jost", sans-serif;
 }/*# sourceMappingURL=main.css.map */

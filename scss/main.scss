@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
 /* VARS */
 $texto:'Jost', sans-serif;
 $tablet: 768px;
@@ -37,6 +39,18 @@ $desktop: 1200px;
     margin: 5px;
 }
 
+@mixin hone {
+    padding: 5px;
+    margin-top: -15px;
+    margin-left:20px;
+    margin-right: 20px;
+    color: white;
+    font-family: $texto;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+
 /* MIXINS */
 
 body {
@@ -48,10 +62,12 @@ body {
 
 /* MAIN FLEX */
 
-
 #main { 
     padding: 20px;
     background-color: white;
+    & h1 {
+        @include hone;
+    }
     .main-flex1 .imagen-flex1, .main-flex2 .imagen-flex2{
         width: 700px;
         height: 500px;
@@ -111,8 +127,7 @@ body {
     }
 }
 
-@media screen and (max-width:768px) {
-    
+@media screen and (max-width:768px) {   
     #main {
         & .main-flex1{ 
             .imagen-flex1{
@@ -153,6 +168,9 @@ body {
 /* MAIN PROMOCIONES */
 #mainPromos {
     padding: 20px;
+    & .promoH1{
+        @include hone;
+    }
     & .flexPromos{
         display: flex;
         flex-wrap: wrap;
@@ -178,7 +196,7 @@ body {
         justify-content: center;
         border-radius: 20px;
         text-decoration: none;
-        font-family:'Jost', sans-serif ;
+        font-family:$texto ;
         color: white;
         display: block;
         transition: all 0.5s;
@@ -206,6 +224,77 @@ body {
         }
     }     
 }
+
+/* MAIN TESTIMONIOS */
+
+#mainTestimonios{
+    padding: 20px;
+    height: auto;
+    & .testH1 {
+        @include hone;
+    }
+    & .flexText{
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        .colFlex{
+            background-color: aqua;
+            width: auto;
+            width: 300px;
+            height: 300px;
+            font-family:$texto ;
+            text-align: center;
+            align-self: center;
+        }
+    }
+}
+
+
+/* MAIN GALERIA */
+
+#mainGaleria {
+    padding: 20px;
+    & .galH1{
+        @include hone;
+    }
+    & .flexGale{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-around;
+    }
+}
+
+/* MAIN CONTACTO */
+
+#mainContact {
+    padding: 20px;
+    height: auto;
+    & .mainH1{
+        @include hone;
+    }
+    & .flexContact{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        & .form1{
+            border: 5px solid black;
+            font-family: $texto;
+            tr .espacio{
+            padding: 20px;
+            }
+        }
+        & .form2 {
+            border: 5px solid black;
+            font-family: $texto;
+        }
+    }
+}
+
+
 
 
 
