@@ -3,7 +3,7 @@ header {
     background-color: white;
     padding-left: 20px;
     padding-right: 20px;
-    & div {
+    & .imag {
         margin:5px;
         img {
         width: 200px;
@@ -41,12 +41,18 @@ header {
 }
 
 @media (max-width:768px) {
+    header{
+        & .imag {
+            display: none;
+        }
+    }
     nav {
         display: none;
     }
 
     .navBarMobile {
         display: block;
+        padding-top: 20px;
     }
 
     .lista__itemM{

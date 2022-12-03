@@ -18,10 +18,10 @@ header {
   padding-left: 20px;
   padding-right: 20px;
 }
-header div {
+header .imag {
   margin: 5px;
 }
-header div img {
+header .imag img {
   width: 200px;
   height: 100px;
   border-radius: 30px;
@@ -55,11 +55,15 @@ header nav .lista .lista__item .itemTexto:hover {
 }
 
 @media (max-width: 768px) {
+  header .imag {
+    display: none;
+  }
   nav {
     display: none;
   }
   .navBarMobile {
     display: block;
+    padding-top: 20px;
   }
   .lista__itemM {
     display: block;
@@ -105,7 +109,7 @@ footer .redes:hover {
 }
 #main h1 {
   padding: 5px;
-  margin-top: -15px;
+  margin-top: -10px;
   margin-left: 20px;
   margin-right: 20px;
   color: white;
@@ -253,7 +257,7 @@ footer .redes:hover {
 }
 #mainPromos .promoH1 {
   padding: 5px;
-  margin-top: -15px;
+  margin-top: -10px;
   margin-left: 20px;
   margin-right: 20px;
   color: white;
@@ -318,7 +322,7 @@ footer .redes:hover {
 }
 #mainTestimonios .testH1 {
   padding: 5px;
-  margin-top: -15px;
+  margin-top: -10px;
   margin-left: 20px;
   margin-right: 20px;
   color: white;
@@ -350,7 +354,7 @@ footer .redes:hover {
 }
 #mainGaleria .galH1 {
   padding: 5px;
-  margin-top: -15px;
+  margin-top: -10px;
   margin-left: 20px;
   margin-right: 20px;
   color: white;
@@ -373,7 +377,7 @@ footer .redes:hover {
 }
 #mainContact .mainH1 {
   padding: 5px;
-  margin-top: -15px;
+  margin-top: -10px;
   margin-left: 20px;
   margin-right: 20px;
   color: white;
